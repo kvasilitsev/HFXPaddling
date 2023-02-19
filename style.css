@@ -3,14 +3,15 @@
 *
 {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0;  
+  font-size: 2vw;  
 }
 
 /* ------------- HTML body styling ------------- */
 
 html, body
 {
+  width: 100%;
   font-family: 'Verdana', sans-serif;    
 }
 
@@ -23,22 +24,23 @@ header
   align-items: center; 
   background-color: darkblue;
   width: 100%;
-  height: 70px;
-  box-shadow:0px 5px 50px 25px #000000;
+  height: 5vw;
+  box-shadow: 0vw 0.3vw 2.5vw 1vw #000000;
   letter-spacing: 0.4em;
 }
 
 .logo
 {  
-  height: 70px;
-  width: 70px;  
+  height: 4vw;
+  width: 4vw;  
   background: darkblue;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
 .company-name
 {
   color: white;
+  font-size: 1rem;
 }
 
 /* -------------- Header/Menu button styling ----------------- */
@@ -47,9 +49,9 @@ header
 {
   top: 0;
   right: 0;
-  height: 70px;
-  width: 70px;
-  padding: 16px;
+  height: 3.5vw;
+  width: 3.5vw;
+  margin-left: 1vw;
   background: darkblue;  
 }
 
@@ -60,19 +62,78 @@ header
   display: none;
 }
 
-/* -------------------  Header/Menu styling --------------- */
+/* -------------------  Menu styling --------------- */
 
-.open-menu
-{  
-  height: 100vh;
-  width: 25%;
-  background: darkblue;
-  display: flex;  
-  position: absolute;
-  left: 0px;
-  top: 70px;
-  padding-left: 10px;
-    
+@media (min-width: 1201px)
+{
+  .open-menu
+  {  
+    height: 100vh;
+    width: 25%;
+    background: darkblue;
+    display: flex;  
+    position: absolute;
+    left: 0px;
+    top: 5vw;
+    padding-left: 1vw;      
+  }
+
+  .open-menu ul li a
+  {
+    text-decoration: none; 
+    font-size: 1rem;  
+    color: white;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.2rem;  
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1200px)
+{
+  .open-menu
+  {  
+    height: 100vh;
+    width: 35%;
+    background: darkblue;
+    display: flex;  
+    position: absolute;
+    left: 0px;
+    top: 5vw;
+    padding-left: 1vw;      
+  }
+
+  .open-menu ul li a
+  {
+    text-decoration: none; 
+    font-size: 1.5rem;  
+    color: white;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.2rem;  
+  }
+}
+
+@media (max-width: 800px)
+{
+  .open-menu
+  {  
+    height: 100vh;
+    width: 45%;
+    background: darkblue;
+    display: flex;  
+    position: absolute;
+    left: 0px;
+    top: 5vw;
+    padding-left: 1vw;      
+  }
+
+  .open-menu ul li a
+  {
+    text-decoration: none; 
+    font-size: 2rem;  
+    color: white;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.2rem;  
+  }
 }
 
 .open-menu ul
@@ -84,17 +145,8 @@ header
 .open-menu ul li
 {
   list-style: none;
-  padding: 6px;
-  margin: 1em; 
-}
-
-.open-menu ul li a
-{
-  text-decoration: none; 
-  font-size: 2vw;  
-  color: white;
-  font-family: 'Arial', sans-serif;
-  letter-spacing: 0.2em;  
+  padding: 0.5vw;
+  margin: 2vw; 
 }
 
 .open-menu ul li a:hover
@@ -102,13 +154,13 @@ header
   border-bottom: 2px solid #ffffff;  
 }
 
-/* --------Main block---------- */
+/* -------- Main block ---------- */
 
 main{
   position: relative;
   z-index: -1;    
 }
-/* -------Main/Picture-------- */
+/* ------- Main/Picture and Motto ------- */
 
 .motto
 { 
@@ -117,45 +169,175 @@ main{
   letter-spacing: 0.4em;    
 }
 
-.motto  img
+.motto img
 {
   height: auto;
   width: 100%;
 
 }
 
-.motto h1 
+@media (min-width: 1401px)
 {
-  position: absolute;
-  font-size: 3vw;
-  color: white;
-  top: 25%; 
-  left: 35%;
-  text-align: center;  
+  .motto h1 
+  {
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+    top: 10vw; 
+    left: 32vw;
+    text-align: center;  
+  }
 }
+
+@media (min-width: 1201px) and (max-width: 1400px)
+{
+  .motto h1 
+  {
+    position: absolute;
+    font-size: 3.5vw;
+    color: white;
+    top: 13vw; 
+    left: 27vw;
+    text-align: center;  
+  }
+}
+
+@media (max-width: 1200px)
+{
+  .motto h1 
+  {
+    position: absolute;
+    font-size: 4vw;
+    color: white;
+    top: 15vw; 
+    left: 25vw;
+    text-align: center;  
+  }
+}
+
 
 /* --------Main/Content---------- */
 
-.content 
-{
-  max-width: 1200px;
-  margin: auto;
-  
+@media (min-width: 1201px)
+  {
+  .content 
+  {
+    max-width: 1200px;
+    margin: auto;
+    
+  }
+
+  .content h1 
+  {
+    font-size: 1.3rem;
+    margin: 0.5rem auto;
+  }
 }
 
-.content h1 
+@media (max-width: 1200px)
 {
-  font-size: 2vw;
-  margin: 0.5em auto;
+  .content 
+  {
+    max-width: 95%;
+    margin: auto;
+    
+  }
+
+  .content h1 
+  {
+    font-size: 2rem;
+    margin: 0.5rem auto;
+  }
+
+}
+
+@media (min-width: 1401px) 
+{
+  .content div h3 u
+  {
+    color: green;
+    font-size: 1rem; 
+  }
+
+  .content div h4
+  {  
+    margin-bottom: 1rem;
+    font-size: 0.7rem;  
+  }
+
+  .content div p, strong
+  {
+    font-size: 0.7rem;
+  }  
+}
+
+@media (min-width: 1201px) and (max-width: 1400px)
+{
+  .content div h3 u
+  {
+    color: green;
+    font-size: 1rem; 
+  }
+
+  .content div h4
+  {  
+    margin-bottom: 1rem;
+    font-size: 1rem;  
+  }
+
+  .content div p, strong
+  {
+    font-size: 1rem;
+  }    
+}
+
+@media (min-width: 801px) and (max-width: 1200px)
+{
+  .content div h3 u
+  {
+    color: green;
+    font-size: 1.5rem; 
+  }
+
+  .content div h4
+  {  
+    margin-bottom: 1rem;
+    font-size: 1rem;  
+  }
+
+  .content div p, strong
+  {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px)
+{
+  .content div h3 u
+  {
+    color: green;
+    font-size: 2rem; 
+  }
+
+  .content div h4
+  {  
+    margin-bottom: 1rem;
+    font-size: 1.3rem;  
+  }
+
+  .content div p, strong
+  {
+    font-size: 1.3rem;
+  }
 }
 
 .content div 
 {
-  margin: 2em auto;
+  margin: 2rem auto;
 }
 
 .content div h3
-{
-  color: green;
-  margin-bottom: 1em;  
+{  
+  margin-bottom: 1rem;  
 }
+
