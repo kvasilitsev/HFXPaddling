@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){  
     $(".btn").on("click", function(){         //toogle menu if button onClick event  
         $(".menu").toggleClass("open-menu");
       });   

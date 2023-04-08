@@ -340,3 +340,13 @@ main{
 {  
   margin-bottom: 1rem;  
 }
+
+/*--------Logout---------*/
+#logout{
+  text-align: right;
+  margin-top: 7vh;
+  padding-right: 3vw;  
+}
+#logout > a{
+  font-size: 0.7em;
+}
