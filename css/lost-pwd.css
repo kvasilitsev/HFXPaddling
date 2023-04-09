@@ -1,0 +1,57 @@
+/* -------- Form ---------- */
+.form-wrap {
+    display: flex;    
+    justify-content: center;
+       
+    }
+  form {    
+    padding: 1em;
+    width: 50vw; 
+    display: block;    
+    margin-top: 10vh;
+    align-content: center;    
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 10px;    
+    }
+  form > div{
+    display: flex;
+    justify-content: center;   
+    margin: 1em;  
+  }
+  form > div > div{  
+    margin: 3px;
+  }
+  .label{
+    align-self: center;
+  }
+  .title {    
+    font-size: 0.7em;    
+    margin:-3px;   
+  }
+  .firstName{    
+    font-size: 0.7em;    
+  }
+  .lastName{  
+    font-size: 0.7em;  
+  }
+  .password{  
+    font-size: 0.7em;  
+  }
+  .role{
+    font-size: 0.7em;  
+  }
+  .role > option{
+    font-size: 0.7em;  
+  }
+  .password{
+    font-size: 0.7em; 
+  }
+  .submit{
+    padding: 0px 2px 0px 2px; 
+    font-size: 0.7em;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px; 
+  }
+  

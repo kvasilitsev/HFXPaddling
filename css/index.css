@@ -12,7 +12,10 @@
 html, body
 {
   width: 100%;
-  font-family: 'Verdana', sans-serif;    
+  font-family: 'Verdana', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;   
 }
 
 /* ------------- Header styling ------------- */
@@ -349,4 +352,22 @@ main{
 }
 #logout > a{
   font-size: 0.7em;
+}
+
+/*---------Footer-----------*/
+
+.footer{
+  position: fixed;
+  bottom: 0;  
+  display: flex;
+  justify-content: space-between;  
+  align-items: end;  
+  background-color: darkblue;
+  color: #ffffff;
+  width: 100%;
+  height: 3vw;    
+}
+.footer > p{
+  font-size: 0.7em;
+  margin: 0.5em;
 }
