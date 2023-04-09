@@ -17,11 +17,11 @@
     <?php include 'logout.php'; ?>
   </div>
   <div class='form-wrap'>
-    <form action="/options.php" class="form">
+    <form action="./problem.php" class="form" method="post">
       <label class="label"> Welcome to IT suppport system</label>
       <div>
         <div>     
-          <select class="title">
+          <select class="title" name='title'>
             <option value='Mr'>Mr</option>
             <option value='Ms'>Ms</option>
             <option value='Mx'>Mx</option>        
@@ -32,7 +32,7 @@
           <input type="text"  id="lastName" placeholder="Last name" name="lastName" class="lastName">
         </div>
         <div>
-          <select class="role">
+          <select class="role" name='role'>
             <option value='admin'>Admin</option>
             <option value='manager'>Manager</option>
             <option value='ceo'>CEO</option>        
@@ -43,6 +43,9 @@
         </div>
       </div>     
     </form>   
+  </div>
+  <div>
+    <?php include 'footer.php'; ?>
   </div> 
 </body>
 </html>

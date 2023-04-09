@@ -1,3 +1,3 @@
 <?php
-  echo'<a href="./support.php">Logout</a>';
+  echo'<a href="./support.php">Logout</a>';  
 ?>
