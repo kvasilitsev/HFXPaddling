@@ -1,18 +1,18 @@
 /* -------- Form ---------- */
 .form-wrap {
-    display: flex;    
-    justify-content: center;
+  display: flex;    
+  justify-content: center;
      
   }
 form {    
-    padding: 1em;
-    width: 50vw; 
-    display: block;    
-    margin-top: 10vh;
-    align-content: center;    
-    background-color: lightgrey;
-    text-align: center;
-    border-radius: 10px;    
+  padding: 1em;
+  width: 50vw; 
+  display: block;    
+  margin-top: 10vh;
+  align-content: center;    
+  background-color: lightgrey;
+  text-align: center;
+  border-radius: 10px;    
   }
 form > div{
   display: block;
@@ -24,14 +24,14 @@ form > div > div{
   margin: 3px;
 }
 .label{
-    align-self: center;
+  align-self: center;
 }
 .title {    
-    font-size: 0.7em;    
-    margin:-3px;   
+  font-size: 0.7em;    
+  margin:-3px;   
 }
 .firstName{    
-    font-size: 0.7em;    
+  font-size: 0.7em;    
 }
 .lastName{  
   font-size: 0.7em;  

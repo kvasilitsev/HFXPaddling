@@ -13,7 +13,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">    
-  <title>Hadivfax Canoe and Kayak</title>
+  <title>Halifax Canoe and Kayak</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/problem.css">  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
@@ -25,7 +25,7 @@
     <?php include 'header.php'; ?>
   </div>
   <div id='logout'>
-    <?php include 'logout.php'; ?>
+    <a href="logout.php">Log Out</a>
   </div>
   <div class='problem'>    
     <?php if ($role === 'admin') {?>

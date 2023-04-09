@@ -25,7 +25,8 @@
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Book Trip</a></li>
-      <li><a href="#">Admin Login</a></li>          
+      <li><a href="#">Admin Login</a></li>
+      <li><a href="./support.php">Technical Support</a><li>         
     </ul>
   </div>
   <!-- Main section -->

@@ -1,0 +1,40 @@
+/*------------Confirmation block--------*/
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.email-message{
+    padding: 1em;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px; 
+    background-color: lightgrey;
+    width: 50vw;  
+}
+.email-data{
+    display: block;
+    text-align: left;
+    padding-left: 15vw;
+}
+.email-data > p{
+    font-size: 0.7em;   
+}
+.email-data-pwd{
+    display: flex;
+    justify-content: center;
+}
+.email-data-pwd > p{
+    font-size: 0.7em;   
+}
+

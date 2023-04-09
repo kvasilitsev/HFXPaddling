@@ -14,7 +14,7 @@
   <?php include 'header.php'; ?>
   </div>
   <div id='logout'>
-    <?php include 'logout.php'; ?>
+    <a href="logout.php">Log Out</a>
   </div>
   <div class='form-wrap'>
     <form action="./problem.php" class="form" method="post">

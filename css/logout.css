@@ -1,0 +1,35 @@
+/*-------Logout-----------*/
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+button{
+    padding: 0px 2px 0px 2px;
+    margin: 10px;
+    font-size: 0.7em;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+.logout-wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+.logout{
+    padding: 1em;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px; 
+    background-color: lightgrey;
+    width: 50vw;  
+}
+.logout-content{
+    display: flex;
+    justify-content: center;
+}
