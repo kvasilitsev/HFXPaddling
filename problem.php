@@ -17,12 +17,12 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/problem.css">  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
-  <script src="menu.js"></script> 
+  <script src="./js/menu.js"></script> 
 </head> 
 <html>
 <body>  
   <div>
-    <?php include 'header.php'; ?>
+    <?php include './includes/header.php'; ?>
   </div>
   <div id='logout'>
     <a href="logout.php">Log Out</a>
@@ -73,7 +73,7 @@
     <?php } ?>
   </div>
   <div>
-    <?php include 'footer.php'; ?>
+    <?php include './includes/footer.php'; ?>
   </div>
 </body>
 </html>
