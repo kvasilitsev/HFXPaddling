@@ -18,8 +18,8 @@
       <p>Please confirm logout<p>
       <hr>           
         <form method="post" class='logout-content'>
-        <button name='confirm' onclick="redirectMain()">Confirm</button>
-        <button name='back' onclick="redirectSupport()">Return to support page</button>
+        <button name='confirm'>Confirm</button>
+        <button name='back'>Return to support page</button>
         </form>
         <?php
           if(isset($_POST['confirm'])){
