@@ -1,7 +1,3 @@
-<?php
-  session_start(); 
-  session_destroy();  
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,19 +16,22 @@
   <div class='logout-wrap'>
     <div class='logout'>
       <p>Please confirm logout<p>
-      <hr>
-      <div class='logout-content'>
-        <button onclick="redirectMain()">Confirm</button>
-        <button onclick="redirectSupport()">Return to support page</button>
-        <script>
-          const redirectMain = () => {
-            window.location = './index.php';
+      <hr>           
+        <form method="post" class='logout-content'>
+        <button name='confirm' onclick="redirectMain()">Confirm</button>
+        <button name='back' onclick="redirectSupport()">Return to support page</button>
+        </form>
+        <?php
+          if(isset($_POST['confirm'])){
+            session_start(); 
+            session_destroy();  
+            header('Location: ./index.php');
+            exit;
+          } elseif(isset($_POST['back'])){
+            header('Location: ./support.php');
+            exit;
           }
-          const redirectSupport = () => {
-            window.location = './support.php';
-          }
-        </script>
-      </div>      
+        ?>          
     </div>
   </div>
   <div>
