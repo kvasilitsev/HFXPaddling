@@ -13,7 +13,7 @@
     $userLastName = $_SESSION["userLastName"];
     $userTitle = $_SESSION["userTitle"];
     $password = $_SESSION["password"]; 
-    $email = $_SESSION["email"];
+    $email = $_SESSION["email"];    
 ?>
 <!DOCTYPE html>
 <html lang="en">
