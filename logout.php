@@ -4,9 +4,7 @@
   <meta charset="UTF-8">    
   <title>Halifax Canoe and Kayak</title>
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/logout.css">  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
-  <script src="./js/menu.js"></script> 
+  <link rel="stylesheet" href="css/logout.css">
 </head> 
 <html>
 <body>  

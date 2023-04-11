@@ -1,4 +1,6 @@
-<header>    
+<header>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="/HFXPaddling/js/menu.js"></script> 
   <div>
     <input type="image" class="btn" alt="Menu" src="./images/hamburger.png">        
   </div>
