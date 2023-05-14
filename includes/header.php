@@ -15,8 +15,9 @@
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">Book Trip</a></li>
+    <li><a href="./all-adventures.php">Upcoming Adventures</a></li>
     <li><a href="./login.php">Admin Login</a></li>
-    <li><a href="./support.php">Technical Support</a><li>         
+    <li><a href="./support.php">Technical Support</a><li>           
   </ul>
 </div>
 

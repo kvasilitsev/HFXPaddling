@@ -23,7 +23,7 @@
   <div class='solution-wrap'>
     <div class='solution'>
       <p>
-        <strong><?php echo "{$title} {$lastName},"; ?></strong>
+        <strong><?php echo "{$title} {$lastName}"; ?></strong>
         please call on the phone number below
       </p>
       <hr>
