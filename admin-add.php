@@ -15,7 +15,7 @@
     <div class='adventure'>
       <p>Admin - Add Adventure<p>
       <hr>           
-        <form method="post">
+        <form method="post" action="admin-confirm.php">
           <label>Input details about the trip</label>
           <div class='adventure-content'>
             <div>
@@ -38,21 +38,9 @@
             </div> 
           </div>
           <div class='add-button'>
-            <button name='confirm'>Confirm</button>  
-            <button name='back'>Back</button> 
+            <button name='submit'>Submit</button>            
           </div>          
-        </form>
-        <?php
-          if(isset($_POST['confirm'])){
-            session_start(); 
-            session_destroy();  
-            header('Location: ./index.php'); //temp
-            exit;
-          } elseif(isset($_POST['back'])){
-            header('Location: ./index.php');
-            exit;
-          }
-        ?>          
+        </form>                 
     </div>
   </div>
   <div>
