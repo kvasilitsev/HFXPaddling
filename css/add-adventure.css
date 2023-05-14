@@ -1,4 +1,4 @@
-/*-------Login-----------*/
+/*-------Add adventure-----------*/
 
 hr{
     display: block;
@@ -16,12 +16,12 @@ button{
     color: white;
     border-radius: 5px;
 }
-.login-wrap{
+.add-wrap{
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
+    margin: 15vw 15vw;
 }
-.login{
+.adventure{
     padding: 1em;
     align-content: center;
     text-align: center;
@@ -29,16 +29,27 @@ button{
     background-color: lightgrey;
     width: 50vw;
 }
-.login-content{
-    display: block;    
-    margin: 2vh;    
+.adventure-content{
+    display: block;
+    text-align: left;      
+    margin: 2vw;
+    padding-left: 20%;    
 }
-input{
-    margin: 2vh;
+.adventure-content > div{
+    display: flex;
+    justify-content: left;
+}
+.adventure-content > div > label{
+    width: 30%;   
+    margin: 1vh;
     font-size: 0.7em;
 }
-.login-button{
+input, textarea{
+    margin: 1vh;
+    font-size: 0.7em;    
+}
+.add-button{
     display: flex;
     justify-content: center;
-    margin: 2vh;
+    margin: 2vw;
 }

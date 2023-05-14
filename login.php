@@ -33,7 +33,7 @@
           if(isset($_POST['confirm'])){
             session_start(); 
             session_destroy();  
-            header('Location: ./index.php'); //temp
+            header('Location: ./admin-add.php');
             exit;
           } elseif(isset($_POST['back'])){
             header('Location: ./index.php');
