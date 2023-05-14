@@ -1,0 +1,55 @@
+/*-------Add adventure-----------*/
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+button{
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    font-size: 0.7em;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+.add-wrap{
+    display: flex;
+    justify-content: center;
+    margin: 15vw 15vw;
+}
+.adventure{
+    padding: 1em;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px; 
+    background-color: lightgrey;
+    width: 50vw;
+}
+.adventure-content{
+    display: block;
+    text-align: left;      
+    margin: 2vw;
+    padding-left: 20%;    
+}
+.adventure-content > div{
+    display: flex;
+    justify-content: left;
+}
+.adventure-content > div > label{
+    width: 30%;   
+    margin: 1vh;
+    font-size: 0.7em;
+}
+input, textarea{
+    margin: 1vh;
+    font-size: 0.7em;    
+}
+.add-button{
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+}

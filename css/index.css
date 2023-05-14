@@ -84,7 +84,7 @@ header
   .open-menu ul li a
   {
     text-decoration: none; 
-    font-size: 1rem;  
+    font-size: 1em;  
     color: white;
     font-family: 'Arial', sans-serif;
     letter-spacing: 0.2rem;  
