@@ -24,10 +24,10 @@
       <?php
         try {
             error_log("Connecting to DB\n", 0);
-            $dbhost = 'localhost';
-            $dbname = 'hfxpaddlingdb';
-            $dbuser = 'root';
-            $dbpass = '';
+            $dbhost = 'mysql://bb07a50c655cc3:3d25cdda@us-cdbr-east-06.cleardb.net/heroku_6cc85c199472e78?reconnect=true';
+            $dbname = 'CLEARDB_SILVER_URL';
+            $dbuser = 'bb07a50c655cc3';
+            $dbpass = '3d25cdda';
             $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);                       
 
             $sql = "SELECT heading, tripDate, duration, summary FROM adventures";
