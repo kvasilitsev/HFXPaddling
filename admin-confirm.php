@@ -27,20 +27,18 @@
   <?php
     try {
         error_log("Connecting to DB\n", 0);
-        $dbhost = 'localhost';
-        $dbname = 'hfxpaddlingdb';
-        $dbuser = 'root';
-        $dbpass = '';
-        $pdo = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+        $cleardb_url = parse_url('mysql://bb07a50c655cc3:3d25cdda@us-cdbr-east-06.cleardb.net/heroku_6cc85c199472e78?reconnect=true');
+        $cleardb_server = $cleardb_url["host"];
+        $cleardb_username = $cleardb_url["user"];
+        $cleardb_password = $cleardb_url["pass"];
+        $cleardb_db = substr($cleardb_url["path"],1);
+        $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);                      
 
 
-        $sql = "INSERT INTO `adventures` (`heading`, `tripDate`, `duration`, `summary`) VALUES (?, ?, ?, ?)";
-        $stmt = $pdo->prepare($sql);
-
-        $pdo->beginTransaction();
-        $stmt->execute([$heading, $date, $duration, $summary]);
-        $pdo->commit();
-
+        $sql = "INSERT INTO adventures (heading, tripDate, duration, summary) VALUES (?, ?, ?, ?)";        
+        $stmt= $conn->prepare($sql);        
+        $stmt->bind_param("ssss", $heading, $date, $duration, $summary);
+        $stmt->execute();
         ?>
         <div>
           <div class='confirm-wrap'>
