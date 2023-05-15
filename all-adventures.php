@@ -20,15 +20,16 @@
     <div class="content">
       <h1>Upcoming Adventures</h1>
       <hr>
-      <div>
+      <div>  
       <?php
         try {
-            error_log("Connecting to DB\n", 0);
-            $dbhost = 'mysql://bb07a50c655cc3:3d25cdda@us-cdbr-east-06.cleardb.net/heroku_6cc85c199472e78?reconnect=true';
-            $dbname = 'CLEARDB_SILVER_URL';
-            $dbuser = 'bb07a50c655cc3';
-            $dbpass = '3d25cdda';
-            $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);                       
+            error_log("Connecting to DB\n", 0);            
+            $cleardb_url = parse_url('mysql://bb07a50c655cc3:3d25cdda@us-cdbr-east-06.cleardb.net/heroku_6cc85c199472e78?reconnect=true');
+            $cleardb_server = $cleardb_url["host"];
+            $cleardb_username = $cleardb_url["user"];
+            $cleardb_password = $cleardb_url["pass"];
+            $cleardb_db = substr($cleardb_url["path"],1);
+            $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);                      
 
             $sql = "SELECT heading, tripDate, duration, summary FROM adventures";
             $result = $conn->query($sql);           
