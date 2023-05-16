@@ -1,3 +1,8 @@
+<?php 
+include('config.php'); 
+include('helperFunctions.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +19,7 @@
   <main>
     <div class="motto">
       <img src="./images/canoe.jpg"/>
-      <h1>Come Expirence <br> Canada</h1>
+      <h1>Come Experience <br> Canada</h1>
     </div>
   <!-- Main section/Content -->
     <div class="content">
@@ -23,8 +28,10 @@
       <div>  
       <?php
         try {
-            error_log("Connecting to DB\n", 0);            
-            $cleardb_url = parse_url('mysql://bb07a50c655cc3:3d25cdda@us-cdbr-east-06.cleardb.net/heroku_6cc85c199472e78?reconnect=true');
+            error_log("Connecting to DB\n", 0); 
+            $dbConnection = getenv('CLEARDB_SILVER_URL');
+            
+            $cleardb_url = parse_url($dbConnection);
             $cleardb_server = $cleardb_url["host"];
             $cleardb_username = $cleardb_url["user"];
             $cleardb_password = $cleardb_url["pass"];
