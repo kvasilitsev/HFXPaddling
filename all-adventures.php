@@ -28,16 +28,8 @@ include('helperFunctions.php');
       <div>  
       <?php
         try {
-            error_log("Connecting to DB\n", 0); 
-            $dbConnection = getenv('CLEARDB_SILVER_URL');
-            
-            $cleardb_url = parse_url($dbConnection);
-            $cleardb_server = $cleardb_url["host"];
-            $cleardb_username = $cleardb_url["user"];
-            $cleardb_password = $cleardb_url["pass"];
-            $cleardb_db = substr($cleardb_url["path"],1);
-            $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);                      
-
+            error_log("Connecting to DB\n", 0);
+            $conn = getDBConnection();
             $sql = "SELECT heading, tripDate, duration, summary FROM adventures";
             $result = $conn->query($sql);           
             $row = $result -> fetch_assoc();
@@ -52,7 +44,8 @@ include('helperFunctions.php');
                 <p><?php echo $row["summary"]?></p>        
               </div>
               <?php              
-            }            
+            }
+            closeDBConnection($conn);        
             ?>                                  
             <?php
           } catch (Exception $e) {
