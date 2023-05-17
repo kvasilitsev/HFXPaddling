@@ -11,6 +11,10 @@
     $duration = $_SESSION["duration"];
     $summary = $_SESSION["summary"];     
 ?>
+<?php 
+include('config.php'); 
+include('helperFunctions.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,18 +31,12 @@
   <?php
     try {
         error_log("Connecting to DB\n", 0);
-        $cleardb_url = parse_url('mysql://bb07a50c655cc3:3d25cdda@us-cdbr-east-06.cleardb.net/heroku_6cc85c199472e78?reconnect=true');
-        $cleardb_server = $cleardb_url["host"];
-        $cleardb_username = $cleardb_url["user"];
-        $cleardb_password = $cleardb_url["pass"];
-        $cleardb_db = substr($cleardb_url["path"],1);
-        $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);                      
-
-
+        $conn = getDBConnection();
         $sql = "INSERT INTO adventures (heading, tripDate, duration, summary) VALUES (?, ?, ?, ?)";        
         $stmt= $conn->prepare($sql);        
         $stmt->bind_param("ssss", $heading, $date, $duration, $summary);
         $stmt->execute();
+        closeDBConnection($conn);
         ?>
         <div>
           <div class='confirm-wrap'>
